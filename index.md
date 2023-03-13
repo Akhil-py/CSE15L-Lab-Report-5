@@ -8,7 +8,8 @@ However, to do this we will need two bash scripts. The first bash script (script
 
 ## script.sh
 Here is the code in script.sh:
-`git clone git@github.com:Akhil-py/lab7.git
+```
+git clone git@github.com:Akhil-py/lab7.git
 cd lab7
 javac -cp .:lib/hamcrest-core1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
@@ -19,11 +20,14 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests 
 git add .
 git commit -m "Fixed Errors"
-git push`
+git push
+```
 
 ## fixErrors.sh
 Here is the code in fixErrors.sh:
-`ssh cs15lwi23afv@ieng6.ucsd.edu 'bash -s' < script.sh`
+```
+ssh cs15lwi23afv@ieng6.ucsd.edu 'bash -s' < script.sh
+```
 
 ## How to run the script
 To run the script, all you have to do is type `bash fixErrors.sh` in the terminal.
